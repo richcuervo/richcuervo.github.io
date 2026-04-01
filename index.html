@@ -4,6 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rich Cuervo — HR Professional & Researcher</title>
+
+<!-- SEO Meta -->
+<meta name="description" content="Rich Cuervo is an HR professional and researcher specializing in people science, organizational effectiveness, emotional intelligence, and leadership. MBA · SHRM-SCP · SPHR · HCM.">
+<meta name="keywords" content="Rich Cuervo, HR professional, people science, organizational effectiveness, emotional intelligence, leadership, burnout, talent acquisition, SHRM-SCP, SPHR, HR research">
+<meta name="author" content="Rich Cuervo">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://richcuervo.github.io">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://richcuervo.github.io">
+<meta property="og:title" content="Rich Cuervo — HR Professional & Researcher">
+<meta property="og:description" content="People science, organizational effectiveness, and leadership research. Writing on why people leave, what makes them stay, and everything in between.">
+<meta property="og:site_name" content="Rich Cuervo">
+
+<!-- Twitter/X Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Rich Cuervo — HR Professional & Researcher">
+<meta name="twitter:description" content="People science, organizational effectiveness, and leadership research.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%231a3a5c'/><text y='72' x='50' text-anchor='middle' font-size='58' font-family='Georgia,serif' fill='%23f0c060'>R</text></svg>">
+
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-22PX1M7KB0"></script>
 <script>
@@ -12,642 +35,975 @@
   gtag('js', new Date());
   gtag('config', 'G-22PX1M7KB0');
 </script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,300;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
-  :root {
-    --ink: #1a1714;
-    --paper: #f5f0e8;
-    --warm: #c8a96e;
-    --accent: #8b3a2a;
-    --muted: #7a7068;
-    --rule: #d9d0c0;
-  }
-
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--paper);
-    color: var(--ink);
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    line-height: 1.7;
-    overflow-x: hidden;
-  }
-
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 9999;
-    opacity: 0.4;
-  }
-
-  /* NAV */
-  nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.2rem 4rem;
-    background: rgba(245,240,232,0.92);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .nav-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    color: var(--ink);
-    text-decoration: none;
-  }
-
-  .nav-center {
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
-  }
-
-  .nav-center a {
-    font-size: 0.78rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--muted);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .nav-center a:hover { color: var(--accent); }
-
-  .nav-social {
-    display: flex;
-    gap: 0.6rem;
-    align-items: center;
-  }
-
-  .nav-social a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px; height: 32px;
-    border: 1px solid var(--rule);
-    color: var(--muted);
-    text-decoration: none;
-    font-size: 0.72rem;
-    font-weight: 500;
-    transition: background 0.2s, color 0.2s, border-color 0.2s;
-  }
-
-  .nav-social a:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-
-  /* HERO */
-  .hero {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 80px;
-  }
-
-  .hero-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 6rem 4rem 6rem 5rem;
-    position: relative;
-  }
-
-  .hero-left::after {
-    content: '';
-    position: absolute;
-    right: 0; top: 10%; bottom: 10%;
-    width: 1px;
-    background: linear-gradient(to bottom, transparent, var(--rule), transparent);
-  }
-
-  .hero-eyebrow {
-    font-size: 0.72rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1.5rem;
-    opacity: 0;
-    animation: fadeUp 0.8s 0.2s forwards;
-  }
-
-  .hero-name {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(3.5rem, 6vw, 5.5rem);
-    line-height: 1.05;
-    letter-spacing: -0.02em;
-    margin-bottom: 1.5rem;
-    opacity: 0;
-    animation: fadeUp 0.8s 0.35s forwards;
-  }
-
-  .hero-name em { font-style: italic; color: var(--accent); }
-
-  .hero-title {
-    font-size: 0.95rem;
-    color: var(--muted);
-    letter-spacing: 0.04em;
-    margin-bottom: 0.3rem;
-    opacity: 0;
-    animation: fadeUp 0.8s 0.5s forwards;
-  }
-
-  .hero-credentials {
-    font-size: 0.78rem;
-    color: var(--warm);
-    letter-spacing: 0.06em;
-    margin-bottom: 2.5rem;
-    opacity: 0;
-    animation: fadeUp 0.8s 0.55s forwards;
-  }
-
-  .hero-tagline {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: var(--ink);
-    max-width: 44ch;
-    border-left: 3px solid var(--warm);
-    padding-left: 1.2rem;
-    opacity: 0;
-    animation: fadeUp 0.8s 0.65s forwards;
-  }
-
-  .hero-cta {
-    margin-top: 3rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    opacity: 0;
-    animation: fadeUp 0.8s 0.8s forwards;
-  }
-
-  .btn-primary {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    background: var(--accent);
-    color: #fff;
-    font-size: 0.78rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background 0.2s, transform 0.2s;
-  }
-
-  .btn-primary:hover { background: #6e2e21; transform: translateY(-1px); }
-
-  .btn-outline {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    border: 1px solid var(--ink);
-    color: var(--ink);
-    font-size: 0.78rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background 0.2s, color 0.2s, transform 0.2s;
-  }
-
-  .btn-outline:hover { background: var(--ink); color: var(--paper); transform: translateY(-1px); }
-
-  .hero-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 6rem 5rem 6rem 4rem;
-    opacity: 0;
-    animation: fadeIn 1s 0.9s forwards;
-  }
-
-  .hero-stat-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2px;
-    background: var(--rule);
-    border: 1px solid var(--rule);
-    margin-bottom: 3rem;
-  }
-
-  .hero-stat { background: var(--paper); padding: 2rem; }
-
-  .stat-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
-    color: var(--accent);
-    line-height: 1;
-    margin-bottom: 0.4rem;
-  }
-
-  .stat-label {
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-
-  .hero-quote {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 1.05rem;
-    color: var(--muted);
-    line-height: 1.6;
-    border-top: 1px solid var(--rule);
-    padding-top: 1.5rem;
-  }
-
-  /* SECTION BASE */
-  section { padding: 7rem 5rem; }
-
-  .section-label {
-    font-size: 0.72rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 0.75rem;
-  }
-
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 3.5vw, 3rem);
-    line-height: 1.15;
-    margin-bottom: 1rem;
-  }
-
-  .section-rule {
-    width: 48px;
-    height: 2px;
-    background: var(--warm);
-    margin-bottom: 3rem;
-  }
-
-  /* ABOUT */
-  #about {
-    background: var(--ink);
-    color: var(--paper);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: center;
-  }
-
-  #about .section-title { color: var(--paper); }
-  #about .section-label { color: var(--warm); }
-  #about .section-rule { background: var(--accent); }
-
-  .about-body { font-size: 1rem; line-height: 1.8; color: #c8c0b4; }
-  .about-body p + p { margin-top: 1.2rem; }
-
-  .about-expertise { display: flex; flex-direction: column; gap: 1rem; }
-
-  .expertise-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 1.2rem 1.4rem;
-    border: 1px solid rgba(200,169,110,0.2);
-    transition: border-color 0.2s, background 0.2s;
-  }
-
-  .expertise-item:hover { border-color: var(--warm); background: rgba(200,169,110,0.05); }
-  .expertise-icon { color: var(--warm); font-size: 1rem; flex-shrink: 0; margin-top: 0.2rem; }
-
-  .expertise-item h4 {
-    font-size: 0.8rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--paper);
-    margin-bottom: 0.2rem;
-  }
-
-  .expertise-item p { font-size: 0.85rem; color: #a09890; }
-
-  /* PUBLICATIONS */
-  #publications { background: var(--paper); }
-
-  .pub-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
-    background: var(--rule);
-    border: 1px solid var(--rule);
-  }
-
-  .pub-card {
-    background: var(--paper);
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    transition: background 0.25s;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .pub-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: var(--accent);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s;
-  }
-
-  .pub-card:hover { background: #ede8de; }
-  .pub-card:hover::before { transform: scaleX(1); }
-
-  .pub-number {
-    font-family: 'Playfair Display', serif;
-    font-size: 3.5rem;
-    color: var(--rule);
-    line-height: 1;
-    margin-bottom: 1rem;
-    font-weight: 700;
-  }
-
-  .pub-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    line-height: 1.45;
-    color: var(--ink);
-    margin-bottom: auto;
-    padding-bottom: 1rem;
-  }
-
-  .pub-tag {
-    display: inline-block;
-    font-size: 0.65rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    border: 1px solid var(--accent);
-    padding: 0.2rem 0.6rem;
-    margin-top: 1rem;
-    align-self: flex-start;
-  }
-
-  .pub-read {
-    margin-top: 0.6rem;
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-
-  /* ARTICLES — Medium feed */
-  #articles { background: #ede8de; }
-
-  .articles-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 3rem;
-  }
-
-  .view-all-link {
-    font-size: 0.78rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px solid var(--accent);
-    padding-bottom: 0.1rem;
-    transition: opacity 0.2s;
-  }
-
-  .view-all-link:hover { opacity: 0.7; }
-
-  .articles-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
-    background: var(--rule);
-    border: 1px solid var(--rule);
-  }
-
-  .article-card {
-    background: #ede8de;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    text-decoration: none;
-    color: inherit;
-    transition: background 0.2s;
-    position: relative;
-    overflow: hidden;
-    min-height: 220px;
-  }
-
-  .article-card::after {
-    content: '↗';
-    position: absolute;
-    top: 1.2rem; right: 1.5rem;
-    font-size: 1rem;
-    color: var(--rule);
-    transition: color 0.2s, transform 0.2s;
-  }
-
-  .article-card:hover { background: var(--paper); }
-  .article-card:hover::after { color: var(--accent); transform: translate(2px,-2px); }
-
-  .article-date {
-    font-size: 0.68rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-
-  .article-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    line-height: 1.45;
-    color: var(--ink);
-  }
-
-  .article-excerpt {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.6;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .article-source {
-    font-size: 0.68rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--warm);
-    margin-top: auto;
-    padding-top: 0.75rem;
-    border-top: 1px solid var(--rule);
-  }
-
-  .articles-loading {
-    grid-column: 1/-1;
-    padding: 3rem;
-    text-align: center;
-    color: var(--muted);
-    font-size: 0.9rem;
-    background: #ede8de;
-  }
-
-  .articles-cta {
-    margin-top: 2px;
-    background: var(--paper);
-    border: 1px solid var(--rule);
-    border-top: none;
-    padding: 1.8rem 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .articles-cta p { font-size: 0.9rem; color: var(--muted); }
-  .articles-cta strong { color: var(--ink); font-weight: 500; }
-
-  /* RESEARCH */
-  #research {
-    background: var(--paper);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 5rem;
-    align-items: start;
-  }
-
-  .research-list {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--rule);
-  }
-
-  .research-item {
-    padding: 1.5rem 2rem;
-    border-bottom: 1px solid var(--rule);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background 0.2s;
-  }
-
-  .research-item:last-child { border-bottom: none; }
-  .research-item:hover { background: #ede8de; }
-  .research-item span { font-size: 0.92rem; }
-  .research-arrow { color: var(--warm); }
-
-  /* CONTACT */
-  #contact {
-    background: var(--ink);
-    text-align: center;
-    padding: 7rem 5rem;
-  }
-
-  #contact .section-label { color: var(--warm); }
-  #contact .section-title { color: var(--paper); }
-  #contact .section-rule { margin: 0 auto 2rem; background: var(--accent); }
-
-  .contact-sub {
-    font-size: 1rem;
-    color: #a09890;
-    max-width: 50ch;
-    margin: 0 auto 3rem;
-    line-height: 1.75;
-  }
-
-  .contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .contact-link {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.9rem 1.8rem;
-    border: 1px solid rgba(200,169,110,0.4);
-    color: var(--warm);
-    text-decoration: none;
-    font-size: 0.78rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: background 0.2s, border-color 0.2s;
-  }
-
-  .contact-link:hover { background: rgba(200,169,110,0.1); border-color: var(--warm); }
-
-  /* FOOTER */
-  footer {
-    background: #0f0d0b;
-    padding: 2.5rem 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .footer-copy { color: #5a5248; font-size: 0.75rem; letter-spacing: 0.06em; }
-
-  .footer-social { display: flex; gap: 1.5rem; }
-
-  .footer-social a {
-    color: #5a5248;
-    text-decoration: none;
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: color 0.2s;
-  }
-
-  .footer-social a:hover { color: var(--warm); }
-
-  /* ANIMATIONS */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-  /* RESPONSIVE */
-  @media (max-width: 960px) {
-    nav { padding: 1rem 1.5rem; }
-    .nav-center { display: none; }
-    .hero { grid-template-columns: 1fr; min-height: auto; }
-    .hero-left { padding: 5rem 1.5rem 3rem; }
-    .hero-left::after { display: none; }
-    .hero-right { padding: 0 1.5rem 5rem; }
-    section { padding: 5rem 1.5rem; }
-    #about, #research { grid-template-columns: 1fr; gap: 3rem; }
-    .pub-grid, .articles-grid { grid-template-columns: 1fr; }
-    .articles-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
-    footer { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; }
-  }
+:root {
+  --navy:    #0f2340;
+  --navy2:   #1a3a5c;
+  --gold:    #e8a020;
+  --gold2:   #f0c060;
+  --white:   #ffffff;
+  --off:     #f7f9fc;
+  --slate:   #4a6080;
+  --light:   #dce8f5;
+  --text:    #1a2a3a;
+  --muted:   #6a8099;
+  --border:  #d0dce8;
+  --warm:    #fff8ee;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--white);
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--off); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 3.5rem;
+  background: rgba(15,35,64,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(232,160,32,0.15);
+  transition: padding 0.3s;
+}
+
+.nav-logo {
+  font-family: 'Fraunces', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.nav-logo span { color: var(--gold); }
+
+.nav-center {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+}
+
+.nav-center a {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.nav-center a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 0; right: 0;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.2s;
+}
+
+.nav-center a:hover { color: var(--white); }
+.nav-center a:hover::after { transform: scaleX(1); }
+
+.nav-social {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nav-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px; height: 34px;
+  border: 1px solid rgba(232,160,32,0.3);
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.nav-social a:hover {
+  background: var(--gold);
+  color: var(--navy);
+  border-color: var(--gold);
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  background: var(--navy);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  position: relative;
+  overflow: hidden;
+  padding-top: 72px;
+}
+
+/* Animated background mesh */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 50%, rgba(26,58,92,0.9) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 80% at 20% 80%, rgba(232,160,32,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 80% 20%, rgba(232,160,32,0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Grid lines */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 3rem 5rem 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(232,160,32,0.12);
+  border: 1px solid rgba(232,160,32,0.3);
+  border-radius: 100px;
+  padding: 0.4rem 1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 2rem;
+  width: fit-content;
+  opacity: 0;
+  animation: fadeUp 0.7s 0.1s forwards;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 6px; height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+.hero-name {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: clamp(4rem, 7vw, 7rem);
+  line-height: 0.95;
+  color: var(--white);
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.25s forwards;
+}
+
+.hero-name .last { color: var(--gold); display: block; }
+
+.hero-title {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.4s forwards;
+}
+
+.hero-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.45s forwards;
+}
+
+.cred-pill {
+  background: rgba(232,160,32,0.1);
+  border: 1px solid rgba(232,160,32,0.25);
+  color: var(--gold2);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.7rem;
+  border-radius: 4px;
+}
+
+.hero-tagline {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.75);
+  max-width: 46ch;
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.55s forwards;
+}
+
+.hero-tagline strong { color: var(--white); font-weight: 500; }
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.7s forwards;
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2.2rem;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(232,160,32,0.3);
+}
+
+.btn-gold:hover {
+  background: var(--gold2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(232,160,32,0.4);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2.2rem;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: var(--white);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.5);
+  transform: translateY(-2px);
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 4rem 5rem 2rem;
+  position: relative;
+  z-index: 2;
+  gap: 1.5rem;
+  opacity: 0;
+  animation: fadeIn 1s 0.8s forwards;
+}
+
+.hero-stat-card {
+  width: 100%;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 1.8rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: background 0.3s, border-color 0.3s, transform 0.3s;
+  backdrop-filter: blur(4px);
+}
+
+.hero-stat-card:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(232,160,32,0.3);
+  transform: translateX(4px);
+}
+
+.stat-icon {
+  width: 48px; height: 48px;
+  background: rgba(232,160,32,0.12);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.stat-info {}
+.stat-num {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  font-weight: 500;
+}
+
+/* ── TICKER ── */
+.ticker-wrap {
+  background: var(--gold);
+  overflow: hidden;
+  padding: 0.7rem 0;
+  white-space: nowrap;
+}
+
+.ticker-inner {
+  display: inline-flex;
+  animation: ticker 30s linear infinite;
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+.ticker-dot { color: var(--navy2); font-size: 1rem; }
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ── SECTIONS ── */
+section { padding: 6rem 4rem; }
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.section-eyebrow::before {
+  content: '';
+  width: 24px; height: 2px;
+  background: var(--gold);
+  border-radius: 1px;
+}
+
+.section-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+  color: var(--navy);
+  margin-bottom: 1.2rem;
+}
+
+.section-sub {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 55ch;
+  margin-bottom: 3.5rem;
+}
+
+/* ── ABOUT ── */
+#about {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(232,160,32,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+#about .section-eyebrow { color: var(--gold); }
+#about .section-eyebrow::before { background: var(--gold); }
+#about .section-title { color: var(--white); }
+#about .section-sub { color: rgba(255,255,255,0.55); max-width: 100%; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.about-body {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: rgba(255,255,255,0.7);
+}
+
+.about-body p + p { margin-top: 1.3rem; }
+
+.about-body strong {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.expertise-stack { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.expertise-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-left: 3px solid var(--gold);
+  border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.expertise-card:hover {
+  background: rgba(255,255,255,0.07);
+  transform: translateX(4px);
+}
+
+.expertise-card h4 {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--gold2);
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.expertise-card p { font-size: 0.85rem; color: rgba(255,255,255,0.5); line-height: 1.6; }
+
+/* ── PUBLICATIONS ── */
+#publications { background: var(--off); }
+
+.pub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.pub-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.pub-card::after {
+  content: '↗';
+  position: absolute;
+  top: 1.2rem; right: 1.5rem;
+  font-size: 1rem;
+  color: var(--border);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.pub-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(15,35,64,0.1);
+}
+
+.pub-card:hover::after {
+  color: var(--gold);
+  transform: translate(2px, -2px);
+}
+
+.pub-number {
+  font-family: 'Fraunces', serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.7rem;
+  background: rgba(232,160,32,0.1);
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.pub-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--navy);
+  margin-bottom: auto;
+  padding-bottom: 1.2rem;
+}
+
+.pub-tag {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy2);
+  background: var(--light);
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+/* ── ARTICLES ── */
+#articles { background: var(--white); }
+
+.articles-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
+}
+
+.view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--navy);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.view-all-btn:hover {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.article-card {
+  background: var(--off);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s, background 0.2s;
+  min-height: 220px;
+  position: relative;
+}
+
+.article-card:hover {
+  border-color: var(--navy2);
+  background: var(--white);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(15,35,64,0.08);
+}
+
+.article-date {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.article-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--navy);
+}
+
+.article-excerpt {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.65;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.article-footer {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-source {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.article-arrow {
+  font-size: 0.85rem;
+  color: var(--border);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.article-card:hover .article-arrow {
+  color: var(--navy);
+  transform: translate(2px, -2px);
+}
+
+.articles-loading {
+  grid-column: 1/-1;
+  padding: 4rem;
+  text-align: center;
+  color: var(--muted);
+  background: var(--off);
+  border-radius: 12px;
+  border: 1px dashed var(--border);
+}
+
+.articles-cta {
+  margin-top: 2rem;
+  background: var(--navy);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.articles-cta p { font-size: 0.95rem; color: rgba(255,255,255,0.65); }
+.articles-cta strong { color: var(--white); }
+
+/* ── RESEARCH ── */
+#research { background: var(--warm); }
+
+.research-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.research-list { display: flex; flex-direction: column; gap: 0.6rem; }
+
+.research-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.92rem;
+  color: var(--text);
+  font-weight: 400;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.research-item:hover {
+  border-color: var(--navy2);
+  transform: translateX(4px);
+  box-shadow: 0 4px 16px rgba(15,35,64,0.08);
+}
+
+.research-item::before {
+  content: '';
+  width: 8px; height: 8px;
+  background: var(--gold);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.research-links { display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; }
+
+.research-platform-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.research-platform-link:hover {
+  border-color: var(--navy);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(15,35,64,0.08);
+}
+
+.platform-icon {
+  width: 40px; height: 40px;
+  background: var(--navy);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 0.8rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.platform-info h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.1rem;
+}
+
+.platform-info p { font-size: 0.75rem; color: var(--muted); }
+
+/* ── CONTACT ── */
+#contact {
+  background: var(--navy);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#contact::before {
+  content: '';
+  position: absolute;
+  bottom: -150px; left: 50%;
+  transform: translateX(-50%);
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(232,160,32,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+#contact .section-eyebrow { color: var(--gold); justify-content: center; }
+#contact .section-eyebrow::before { background: var(--gold); }
+#contact .section-title { color: var(--white); }
+
+.contact-sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.55);
+  max-width: 50ch;
+  margin: 0 auto 3rem;
+  line-height: 1.75;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 2rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--white);
+  min-width: 140px;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.contact-card:hover {
+  background: rgba(232,160,32,0.1);
+  border-color: rgba(232,160,32,0.4);
+  transform: translateY(-4px);
+}
+
+.contact-card-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.contact-card-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.contact-card-value {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.6);
+}
+
+/* ── FOOTER ── */
+footer {
+  background: #07131f;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-top: 1px solid rgba(232,160,32,0.1);
+}
+
+.footer-logo {
+  font-family: 'Fraunces', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.4);
+}
+
+.footer-logo span { color: var(--gold); }
+
+.footer-copy { color: rgba(255,255,255,0.25); font-size: 0.72rem; }
+
+.footer-social { display: flex; gap: 1.5rem; }
+
+.footer-social a {
+  color: rgba(255,255,255,0.3);
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.footer-social a:hover { color: var(--gold); }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  nav { padding: 1rem 2rem; }
+  .nav-center { gap: 1.5rem; }
+  section { padding: 5rem 2.5rem; }
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { display: none; }
+  .pub-grid, .articles-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-grid, .research-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+@media (max-width: 680px) {
+  nav { padding: 1rem 1.25rem; }
+  .nav-center { display: none; }
+  section { padding: 4rem 1.25rem; }
+  .pub-grid, .articles-grid { grid-template-columns: 1fr; }
+  .hero-left { padding: 4rem 1.25rem; }
+  footer { padding: 1.5rem 1.25rem; flex-direction: column; align-items: flex-start; }
+}
 </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">Rich Cuervo</a>
+  <a href="#" class="nav-logo">Rich <span>Cuervo</span></a>
   <ul class="nav-center">
     <li><a href="#about">About</a></li>
     <li><a href="#publications">Publications</a></li>
@@ -665,76 +1021,104 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <p class="hero-eyebrow">HR Professional &amp; Researcher</p>
-    <h1 class="hero-name">Rich<br><em>Cuervo</em></h1>
+    <div class="hero-badge">HR Professional &amp; Researcher</div>
+    <h1 class="hero-name">
+      Rich
+      <span class="last">Cuervo</span>
+    </h1>
     <p class="hero-title">People Science · Organizational Effectiveness · Leadership</p>
-    <p class="hero-credentials">MBA · SHRM-SCP · SPHR · HCM</p>
-    <p class="hero-tagline">Exploring the intersection of human behavior, organizational design, and the science of people at work.</p>
+    <div class="hero-credentials">
+      <span class="cred-pill">MBA</span>
+      <span class="cred-pill">SHRM-SCP</span>
+      <span class="cred-pill">SPHR</span>
+      <span class="cred-pill">HCM</span>
+    </div>
+    <p class="hero-tagline">Writing on <strong>why people leave</strong>, what makes them stay, and everything in between — where behavioral science meets the reality of modern organizations.</p>
     <div class="hero-cta">
-      <a href="#articles" class="btn-primary">Read Articles</a>
-      <a href="#contact" class="btn-outline">Get in Touch</a>
+      <a href="#articles" class="btn-gold">Read My Articles</a>
+      <a href="#contact" class="btn-ghost">Let's Connect</a>
     </div>
   </div>
   <div class="hero-right">
-    <div class="hero-stat-grid">
-      <div class="hero-stat">
-        <div class="stat-num">6</div>
-        <div class="stat-label">Publications</div>
-      </div>
-      <div class="hero-stat">
-        <div class="stat-num">3+</div>
-        <div class="stat-label">Platforms</div>
-      </div>
-      <div class="hero-stat">
-        <div class="stat-num">HR</div>
-        <div class="stat-label">Domain</div>
-      </div>
-      <div class="hero-stat">
-        <div class="stat-num">OD</div>
-        <div class="stat-label">Specialty</div>
+    <div class="hero-stat-card">
+      <div class="stat-icon">✍️</div>
+      <div class="stat-info">
+        <div class="stat-num">7</div>
+        <div class="stat-label">Publications &amp; Articles</div>
       </div>
     </div>
-    <p class="hero-quote">"The organizations that thrive are those that treat people not as resources to be managed, but as humans to be understood."</p>
+    <div class="hero-stat-card">
+      <div class="stat-icon">🎓</div>
+      <div class="stat-info">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Professional Credentials</div>
+      </div>
+    </div>
+    <div class="hero-stat-card">
+      <div class="stat-icon">🔬</div>
+      <div class="stat-info">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Research Platforms</div>
+      </div>
+    </div>
+    <div class="hero-stat-card">
+      <div class="stat-icon">🌐</div>
+      <div class="stat-info">
+        <div class="stat-num">HR</div>
+        <div class="stat-label">People Science &amp; Org Design</div>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span class="ticker-item">People Science <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Organizational Effectiveness <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Emotional Intelligence <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Leadership Research <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Burnout &amp; Retention <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Talent Acquisition <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Behavioral Science <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">HR Strategy <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">People Science <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Organizational Effectiveness <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Emotional Intelligence <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Leadership Research <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Burnout &amp; Retention <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Talent Acquisition <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Behavioral Science <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">HR Strategy <span class="ticker-dot">◆</span></span>
+  </div>
+</div>
+
 <!-- ABOUT -->
 <section id="about">
-  <div>
-    <p class="section-label">About</p>
-    <h2 class="section-title">People Science in Practice</h2>
-    <div class="section-rule"></div>
-    <div class="about-body">
-      <p>Rich Cuervo is an HR professional and researcher focused on the behavioral and organizational dimensions of work — how people lead, how cultures form, and why systems succeed or fail.</p>
-      <p>His work spans motivational theory, emotional intelligence, organizational effectiveness, and the human cost of broken workplace systems. He writes for practitioners who believe that evidence-based approaches to people can transform organizations from the inside out.</p>
-      <p>Rich holds an MBA and carries credentials including SHRM-SCP, SPHR, and HCM. He is available for speaking engagements, consulting partnerships, and collaborative research opportunities.</p>
+  <div class="about-grid reveal">
+    <div>
+      <p class="section-eyebrow">About Rich</p>
+      <h2 class="section-title" style="color:var(--white)">People Science<br>in Practice</h2>
+      <div class="about-body">
+        <p>Rich Cuervo is an HR professional and researcher focused on the <strong>behavioral and organizational dimensions of work</strong> — how people lead, how cultures form, and why systems succeed or fail.</p>
+        <p>His work spans motivational theory, emotional intelligence, organizational effectiveness, and the human cost of broken workplace systems. He writes for practitioners who believe that <strong>evidence-based approaches to people</strong> can transform organizations from the inside out.</p>
+        <p>Rich holds an MBA and carries credentials including SHRM-SCP, SPHR, and HCM. He is available for consulting partnerships, and collaborative research opportunities.</p>
+      </div>
     </div>
-  </div>
-  <div class="about-expertise">
-    <div class="expertise-item">
-      <div class="expertise-icon">◈</div>
-      <div>
+    <div class="expertise-stack">
+      <div class="expertise-card">
         <h4>Leadership &amp; Motivation</h4>
         <p>Grounding modern leadership in foundational behavioral science and motivational theory.</p>
       </div>
-    </div>
-    <div class="expertise-item">
-      <div class="expertise-icon">◈</div>
-      <div>
+      <div class="expertise-card">
         <h4>Organizational Effectiveness</h4>
         <p>Designing adaptive organizations that reduce burnout, improve retention, and scale culture.</p>
       </div>
-    </div>
-    <div class="expertise-item">
-      <div class="expertise-icon">◈</div>
-      <div>
+      <div class="expertise-card">
         <h4>Emotional Intelligence</h4>
         <p>Building EI competency frameworks that embed psychological safety into organizational culture.</p>
       </div>
-    </div>
-    <div class="expertise-item">
-      <div class="expertise-icon">◈</div>
-      <div>
+      <div class="expertise-card">
         <h4>Talent &amp; Hiring Systems</h4>
         <p>Reimagining interview and selection processes through the lens of equity and validity.</p>
       </div>
@@ -744,110 +1128,151 @@
 
 <!-- PUBLICATIONS -->
 <section id="publications">
-  <p class="section-label">Publications</p>
-  <h2 class="section-title">Featured Research &amp; Writing</h2>
-  <div class="section-rule"></div>
-  <div class="pub-grid">
-    <a class="pub-card" href="https://medium.com/@augustosc91" target="_blank">
-      <div class="pub-number">01</div>
+  <div class="reveal">
+    <p class="section-eyebrow">Publications</p>
+    <h2 class="section-title">Featured Research &amp; Writing</h2>
+    <p class="section-sub">Exploring the intersection of human behavior, organizational design, and the science of people at work.</p>
+  </div>
+  <div class="pub-grid reveal">
+    <a class="pub-card" href="https://medium.com/@augustosc91/ageless-wisdom-foundational-motivational-theories-and-leadership-approaches-for-modern-success-4471ec35bd6a" target="_blank">
+      <div class="pub-number">No. 01</div>
       <p class="pub-title">Ageless Wisdom: Foundational Motivational Theories and Leadership Approaches for Modern Success</p>
       <span class="pub-tag">Leadership</span>
-      <span class="pub-read">Read on Medium ↗</span>
     </a>
-    <a class="pub-card" href="https://medium.com/@augustosc91" target="_blank">
-      <div class="pub-number">02</div>
+    <a class="pub-card" href="https://medium.com/@augustosc91/the-psychology-of-grieving-the-decisions-we-didnt-make-a70407be6bb2" target="_blank">
+      <div class="pub-number">No. 02</div>
       <p class="pub-title">The Psychology of Grieving the Decisions We Didn't Make</p>
       <span class="pub-tag">Psychology</span>
-      <span class="pub-read">Read on Medium ↗</span>
     </a>
-    <a class="pub-card" href="https://medium.com/@augustosc91" target="_blank">
-      <div class="pub-number">03</div>
+    <a class="pub-card" href="https://medium.com/@augustosc91/how-can-competencies-build-a-culture-of-emotional-intelligence-4a8e18ce7ad4" target="_blank">
+      <div class="pub-number">No. 03</div>
       <p class="pub-title">How Can Competencies Build a Culture of Emotional Intelligence?</p>
       <span class="pub-tag">Emotional Intelligence</span>
-      <span class="pub-read">Read on Medium ↗</span>
     </a>
-    <a class="pub-card" href="https://medium.com/@augustosc91" target="_blank">
-      <div class="pub-number">04</div>
+    <a class="pub-card" href="https://medium.com/@augustosc91/people-science-and-the-adaptive-organization-breaking-the-burnout-turnover-cycle-798aafefe81c" target="_blank">
+      <div class="pub-number">No. 04</div>
       <p class="pub-title">People Science and the Adaptive Organization: Breaking the Burnout-Turnover Cycle</p>
       <span class="pub-tag">People Science</span>
-      <span class="pub-read">Read on Medium ↗</span>
     </a>
-    <a class="pub-card" href="https://medium.com/@augustosc91" target="_blank">
-      <div class="pub-number">05</div>
+    <a class="pub-card" href="https://medium.com/@augustosc91/organizational-effectiveness-in-culturally-complex-environments-9fe22cd7b7e0" target="_blank">
+      <div class="pub-number">No. 05</div>
       <p class="pub-title">Organizational Effectiveness in Culturally Complex Environments</p>
       <span class="pub-tag">Org Design</span>
-      <span class="pub-read">Read on Medium ↗</span>
     </a>
-    <a class="pub-card" href="https://medium.com/@augustosc91" target="_blank">
-      <div class="pub-number">06</div>
+    <a class="pub-card" href="https://medium.com/@augustosc91/the-interview-system-is-broken-and-i-say-that-as-someone-who-has-been-on-both-sides-of-the-table-08dbf09eb2c1" target="_blank">
+      <div class="pub-number">No. 06</div>
       <p class="pub-title">The Interview System Is Broken</p>
       <span class="pub-tag">Talent</span>
-      <span class="pub-read">Read on Medium ↗</span>
+    </a>
+    <a class="pub-card" href="https://medium.com/@augustosc91/the-exit-wound-what-high-performers-really-want-7014d1c9cea5" target="_blank">
+      <div class="pub-number">No. 07</div>
+      <p class="pub-title">The Exit Wound: What High Performers Really Want</p>
+      <span class="pub-tag">Retention</span>
     </a>
   </div>
 </section>
 
 <!-- ARTICLES — Live Medium RSS -->
 <section id="articles">
-  <div class="articles-header">
+  <div class="articles-header reveal">
     <div>
-      <p class="section-label">Latest Writing</p>
+      <p class="section-eyebrow">Latest Writing</p>
       <h2 class="section-title">From the Blog</h2>
-      <div class="section-rule" style="margin-bottom:0"></div>
     </div>
-    <a href="https://medium.com/@augustosc91" target="_blank" class="view-all-link">View all on Medium ↗</a>
+    <a href="https://medium.com/@augustosc91" target="_blank" class="view-all-btn">View all on Medium ↗</a>
   </div>
-
-  <div class="articles-grid" id="articles-grid">
+  <div class="articles-grid reveal" id="articles-grid">
     <div class="articles-loading">Loading latest articles from Medium…</div>
   </div>
-
-  <div class="articles-cta">
-    <p><strong>New articles auto-appear here.</strong> Just publish on Medium and your site updates itself.</p>
-    <a href="https://medium.com/@augustosc91" target="_blank" class="btn-primary">Follow on Medium</a>
+  <div class="articles-cta reveal">
+    <p><strong>New articles appear here automatically.</strong> Just publish on Medium and your site stays in sync.</p>
+    <a href="https://medium.com/@augustosc91" target="_blank" class="btn-gold">Follow on Medium</a>
   </div>
 </section>
 
 <!-- RESEARCH -->
 <section id="research">
-  <div>
-    <p class="section-label">Focus Areas</p>
+  <div class="reveal">
+    <p class="section-eyebrow">Focus Areas</p>
     <h2 class="section-title">Areas of Inquiry</h2>
-    <div class="section-rule"></div>
-    <p style="color:var(--muted);font-size:0.92rem;line-height:1.8;margin-bottom:2rem;">Rich's research sits at the crossroads of behavioral science, organizational design, and practical HR strategy — always with an eye toward what actually works for real people in real organizations.</p>
-    <div style="display:flex;flex-direction:column;gap:0.75rem;">
-      <a href="https://independent.academia.edu/RichCuervo" target="_blank" class="btn-outline" style="width:fit-content;">View on Academia.edu ↗</a>
-      <a href="https://medium.com/@augustosc91" target="_blank" class="btn-outline" style="width:fit-content;">Follow on Medium ↗</a>
-    </div>
+    <p class="section-sub">At the crossroads of behavioral science, organizational design, and practical HR strategy — always asking what actually works for real people in real organizations.</p>
   </div>
-  <div class="research-list">
-    <div class="research-item"><span>Motivational Theory &amp; Behavioral Science</span><span class="research-arrow">→</span></div>
-    <div class="research-item"><span>Emotional Intelligence &amp; Competency Frameworks</span><span class="research-arrow">→</span></div>
-    <div class="research-item"><span>Burnout, Turnover &amp; Organizational Health</span><span class="research-arrow">→</span></div>
-    <div class="research-item"><span>Cross-Cultural Organizational Effectiveness</span><span class="research-arrow">→</span></div>
-    <div class="research-item"><span>Talent Acquisition &amp; Selection Science</span><span class="research-arrow">→</span></div>
-    <div class="research-item"><span>Leadership Development &amp; Coaching</span><span class="research-arrow">→</span></div>
-    <div class="research-item"><span>Decision-Making &amp; Applied Psychology</span><span class="research-arrow">→</span></div>
+  <div class="research-grid reveal">
+    <div class="research-list">
+      <div class="research-item">Motivational Theory &amp; Behavioral Science</div>
+      <div class="research-item">Emotional Intelligence &amp; Competency Frameworks</div>
+      <div class="research-item">Burnout, Turnover &amp; Organizational Health</div>
+      <div class="research-item">Cross-Cultural Organizational Effectiveness</div>
+      <div class="research-item">Talent Acquisition &amp; Selection Science</div>
+      <div class="research-item">Leadership Development &amp; Coaching</div>
+      <div class="research-item">Decision-Making &amp; Applied Psychology</div>
+    </div>
+    <div>
+      <p style="font-size:0.95rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">Rich's research is published across multiple platforms. Explore his full body of work below.</p>
+      <div class="research-links">
+        <a href="https://independent.academia.edu/RichCuervo" target="_blank" class="research-platform-link">
+          <div class="platform-icon">A</div>
+          <div class="platform-info">
+            <h4>Academia.edu</h4>
+            <p>Academic research &amp; publications</p>
+          </div>
+          <span style="margin-left:auto;color:var(--muted)">↗</span>
+        </a>
+        <a href="https://medium.com/@augustosc91" target="_blank" class="research-platform-link">
+          <div class="platform-icon">M</div>
+          <div class="platform-info">
+            <h4>Medium</h4>
+            <p>Articles &amp; thought leadership</p>
+          </div>
+          <span style="margin-left:auto;color:var(--muted)">↗</span>
+        </a>
+        <a href="https://www.linkedin.com/in/rich-cuervo-mba-shrm-scp-sphr-hcm-2bb06a1b5/" target="_blank" class="research-platform-link">
+          <div class="platform-icon">in</div>
+          <div class="platform-info">
+            <h4>LinkedIn</h4>
+            <p>Professional network &amp; updates</p>
+          </div>
+          <span style="margin-left:auto;color:var(--muted)">↗</span>
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <p class="section-label">Contact</p>
-  <h2 class="section-title">Let's Connect</h2>
-  <div class="section-rule"></div>
-  <p class="contact-sub">Open to speaking opportunities, consulting engagements, research collaborations, and professional partnerships.</p>
-  <div class="contact-links">
-    <a href="/cdn-cgi/l/email-protection#641d0b1116240109050d084a070b09" class="contact-link">✉ Email Rich</a>
-    <a href="https://www.linkedin.com/in/rich-cuervo-mba-shrm-scp-sphr-hcm-2bb06a1b5/" target="_blank" class="contact-link">in LinkedIn</a>
-    <a href="https://medium.com/@augustosc91" target="_blank" class="contact-link">M Medium</a>
-    <a href="https://independent.academia.edu/RichCuervo" target="_blank" class="contact-link">A Academia</a>
-    <a href="#" class="contact-link">↓ Download CV</a>
+  <div class="reveal">
+    <p class="section-eyebrow">Get in Touch</p>
+    <h2 class="section-title" style="color:var(--white)">Let's Connect</h2>
+    <p class="contact-sub">Open to speaking opportunities, consulting engagements, research collaborations, and professional partnerships.</p>
+    <div class="contact-grid">
+      <a href="mailto:richard.cuervo72@hotmail.com" class="contact-card">
+        <div class="contact-card-icon">✉️</div>
+        <div class="contact-card-label">Email</div>
+        <div class="contact-card-value">Send a message</div>
+      </a>
+      <a href="https://www.linkedin.com/in/rich-cuervo-mba-shrm-scp-sphr-hcm-2bb06a1b5/" target="_blank" class="contact-card">
+        <div class="contact-card-icon">💼</div>
+        <div class="contact-card-label">LinkedIn</div>
+        <div class="contact-card-value">Connect professionally</div>
+      </a>
+      <a href="https://medium.com/@augustosc91" target="_blank" class="contact-card">
+        <div class="contact-card-icon">✍️</div>
+        <div class="contact-card-label">Medium</div>
+        <div class="contact-card-value">Follow my writing</div>
+      </a>
+      <a href="https://independent.academia.edu/RichCuervo" target="_blank" class="contact-card">
+        <div class="contact-card-icon">🎓</div>
+        <div class="contact-card-label">Academia.edu</div>
+        <div class="contact-card-value">View research</div>
+      </a>
+    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
+  <span class="footer-logo">Rich <span>Cuervo</span></span>
   <span class="footer-copy">© 2026 Rich Cuervo — All rights reserved</span>
   <div class="footer-social">
     <a href="https://www.linkedin.com/in/rich-cuervo-mba-shrm-scp-sphr-hcm-2bb06a1b5/" target="_blank">LinkedIn</a>
@@ -856,11 +1281,27 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// ── Live Medium RSS via rss2json API ──────────────────────────────────────
+<script>
+// ── Scroll Reveal ─────────────────────────────────────────────────────────
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ── Medium RSS Feed ───────────────────────────────────────────────────────
 const MEDIUM_HANDLE = '@augustosc91';
-const RSS_URL = `https://medium.com/feed/${MEDIUM_HANDLE}`;
-const API_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}&count=6`;
+const RSS_URL = encodeURIComponent(`https://medium.com/feed/${MEDIUM_HANDLE}`);
+// Try two APIs in sequence for reliability
+const APIS = [
+  `https://api.rss2json.com/v1/api.json?rss_url=${RSS_URL}&count=6&api_key=`,
+  `https://api.allorigins.win/get?url=${RSS_URL}`
+];
 
 function stripHtml(html) {
   const d = document.createElement('div');
@@ -869,7 +1310,7 @@ function stripHtml(html) {
 }
 
 function formatDate(str) {
-  return new Date(str).toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
+  return new Date(str).toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' });
 }
 
 function readingTime(content) {
@@ -877,29 +1318,76 @@ function readingTime(content) {
   return Math.max(1, Math.round(words / 200)) + ' min read';
 }
 
+function renderArticles(items) {
+  const grid = document.getElementById('articles-grid');
+  grid.innerHTML = items.slice(0, 6).map(item => {
+    const date    = item.pubDate ? formatDate(item.pubDate) : '';
+    const rt      = item.content ? readingTime(item.content) : '';
+    const excerpt = item.description
+      ? stripHtml(item.description).slice(0, 160).trim() + '…'
+      : '';
+    return `
+      <a class="article-card" href="${item.link}" target="_blank" rel="noopener">
+        <span class="article-date">${date}${rt ? ' · ' + rt : ''}</span>
+        <h3 class="article-title">${item.title}</h3>
+        ${excerpt ? `<p class="article-excerpt">${excerpt}</p>` : ''}
+        <div class="article-footer">
+          <span class="article-source">Medium</span>
+          <span class="article-arrow">↗</span>
+        </div>
+      </a>`;
+  }).join('');
+}
+
+function parseRSSXML(xmlStr) {
+  const parser = new DOMParser();
+  const xml = parser.parseFromString(xmlStr, 'text/xml');
+  const items = [...xml.querySelectorAll('item')];
+  return items.map(item => ({
+    title:       item.querySelector('title')?.textContent || '',
+    link:        item.querySelector('link')?.textContent || '',
+    pubDate:     item.querySelector('pubDate')?.textContent || '',
+    description: item.querySelector('description')?.textContent || '',
+    content:     item.querySelector('encoded')?.textContent || item.querySelector('description')?.textContent || ''
+  }));
+}
+
 async function loadArticles() {
   const grid = document.getElementById('articles-grid');
-  try {
-    const res  = await fetch(API_URL);
-    const data = await res.json();
-    if (!data.items || !data.items.length) throw new Error('No items');
 
-    grid.innerHTML = data.items.map(item => {
-      const date    = item.pubDate ? formatDate(item.pubDate) : '';
-      const rt      = item.content ? readingTime(item.content) : '';
-      const excerpt = item.description
-        ? stripHtml(item.description).slice(0, 155).trim() + '…'
-        : '';
-      return `
-        <a class="article-card" href="${item.link}" target="_blank" rel="noopener">
-          <span class="article-date">${date}${rt ? ' · ' + rt : ''}</span>
-          <h3 class="article-title">${item.title}</h3>
-          ${excerpt ? `<p class="article-excerpt">${excerpt}</p>` : ''}
-          <span class="article-source">Published on Medium</span>
-        </a>`;
-    }).join('');
-  } catch {
-    grid.innerHTML = `
-      <div class="articles-loading">
-        Couldn't load articles automatically —
-        <a href="https://medium.com/${MEDIUM_
+  // Method 1: rss2json
+  try {
+    const res  = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${RSS_URL}&count=6`);
+    const data = await res.json();
+    if (data.status === 'ok' && data.items?.length) {
+      renderArticles(data.items);
+      return;
+    }
+  } catch {}
+
+  // Method 2: allorigins proxy (returns raw RSS XML)
+  try {
+    const res  = await fetch(`https://api.allorigins.win/get?url=${RSS_URL}`);
+    const data = await res.json();
+    if (data.contents) {
+      const items = parseRSSXML(data.contents);
+      if (items.length) { renderArticles(items); return; }
+    }
+  } catch {}
+
+  // Fallback: show manual cards from known articles
+  const fallbackArticles = [
+    { title: "The Exit Wound: What High Performers Really Want", link: "https://medium.com/@augustosc91/the-exit-wound-what-high-performers-really-want-7014d1c9cea5", pubDate: "", description: "Exploring what truly drives high performers out the door — and what it would actually take to make them stay." },
+    { title: "The Interview System Is Broken", link: "https://medium.com/@augustosc91/the-interview-system-is-broken-and-i-say-that-as-someone-who-has-been-on-both-sides-of-the-table-08dbf09eb2c1", pubDate: "", description: "A candid look at why traditional hiring processes fail candidates and organizations alike." },
+    { title: "People Science and the Adaptive Organization: Breaking the Burnout-Turnover Cycle", link: "https://medium.com/@augustosc91/people-science-and-the-adaptive-organization-breaking-the-burnout-turnover-cycle-798aafefe81c", pubDate: "", description: "How data-driven people practices can break the costly cycle of burnout and voluntary turnover." },
+    { title: "Organizational Effectiveness in Culturally Complex Environments", link: "https://medium.com/@augustosc91/organizational-effectiveness-in-culturally-complex-environments-9fe22cd7b7e0", pubDate: "", description: "What it takes to lead and perform effectively across cultures, geographies, and competing value systems." },
+    { title: "How Can Competencies Build a Culture of Emotional Intelligence?", link: "https://medium.com/@augustosc91/how-can-competencies-build-a-culture-of-emotional-intelligence-4a8e18ce7ad4", pubDate: "", description: "A framework for embedding emotional intelligence into the DNA of organizations through competency design." },
+    { title: "Ageless Wisdom: Foundational Motivational Theories and Leadership Approaches for Modern Success", link: "https://medium.com/@augustosc91/ageless-wisdom-foundational-motivational-theories-and-leadership-approaches-for-modern-success-4471ec35bd6a", pubDate: "", description: "Why the classic theories of motivation still hold the answers to today's most pressing leadership challenges." }
+  ];
+  renderArticles(fallbackArticles);
+}
+
+loadArticles();
+</script>
+</body>
+</html>
