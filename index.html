@@ -1299,14 +1299,8 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// ── Medium RSS Feed ───────────────────────────────────────────────────────
-const MEDIUM_HANDLE = '@augustosc91';
-const RSS_URL = encodeURIComponent(`https://medium.com/feed/${MEDIUM_HANDLE}`);
-// Try two APIs in sequence for reliability
-const APIS = [
-  `https://api.rss2json.com/v1/api.json?rss_url=${RSS_URL}&count=6&api_key=`,
-  `https://api.allorigins.win/get?url=${RSS_URL}`
-];
+// ── Medium RSS Feed via Cloudflare Worker ────────────────────────────────
+const WORKER_URL = 'https://mediumfeed.richard-cuervo72.workers.dev';
 
 function stripHtml(html) {
   const d = document.createElement('div');
@@ -1359,33 +1353,29 @@ function parseRSSXML(xmlStr) {
 
 async function loadArticles() {
   const grid = document.getElementById('articles-grid');
-
-  // Method 1: rss2json
-  try {
-    const res  = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${RSS_URL}&count=6`);
-    const data = await res.json();
-    if (data.status === 'ok' && data.items?.length) {
-      renderArticles(data.items);
-      return;
-    }
-  } catch {}
-
-  // Method 2: allorigins proxy (returns raw RSS XML)
-  try {
-    const res  = await fetch(`https://api.allorigins.win/get?url=${RSS_URL}`);
-    const data = await res.json();
-    if (data.contents) {
-      const items = parseRSSXML(data.contents);
-      if (items.length) { renderArticles(items); return; }
-    }
-  } catch {}
-
-  // Fallback: show manual cards from known articles
   const fallbackArticles = [
     { title: "I Never Wanted to Leave. Then I Realized I Had Already Changed.", link: "https://medium.com/@augustosc91/i-never-wanted-to-leave-then-i-realized-i-had-already-changed-78769eb026be", pubDate: "", description: "A deeply personal reflection on the moment you realize that staying isn't about the organization anymore — it's about who you've become." },
     { title: "The Exit Wound: What High Performers Really Want", link: "https://medium.com/@augustosc91/the-exit-wound-what-high-performers-really-want-7014d1c9cea5", pubDate: "", description: "Exploring what truly drives high performers out the door — and what it would actually take to make them stay." },
     { title: "The Interview System Is Broken", link: "https://medium.com/@augustosc91/the-interview-system-is-broken-and-i-say-that-as-someone-who-has-been-on-both-sides-of-the-table-08dbf09eb2c1", pubDate: "", description: "A candid look at why traditional hiring processes fail candidates and organizations alike." },
     { title: "People Science and the Adaptive Organization: Breaking the Burnout-Turnover Cycle", link: "https://medium.com/@augustosc91/people-science-and-the-adaptive-organization-breaking-the-burnout-turnover-cycle-798aafefe81c", pubDate: "", description: "How data-driven people practices can break the costly cycle of burnout and voluntary turnover." },
     { title: "Organizational Effectiveness in Culturally Complex Environments", link: "https://medium.com/@augustosc91/organizational-effectiveness-in-culturally-complex-environments-9fe22cd7b7e0", pubDate: "", description: "What it takes to lead and perform effectively across cultures, geographies, and competing value systems." },
-    { title: "How Can Competencies Build a Culture of Emotional Intelligence?", link: "https://medium.com/@augustosc91/how-can-competencies-build-a-culture-of-emotional-intelligence-4a8e18ce7ad4", pubDate: "", description: "A framework for embedding emotional intelligence into the DNA of organizations through competency design." },
-    { title: "Ageless Wisdom: Foundational Motivational Theories and Leadership Approaches for Modern Success", link: "https://medium.com/@augustosc91/ageless-wisdom-foundational-motivational-theories-and-leadership-approaches-for-modern-success-4471ec35bd6a", pubDate: "", description: "Why the classic theories of motivation s
+    { title: "How Can Competencies Build a Culture of Emotional Intelligence?", link: "https://medium.com/@augustosc91/how-can-competencies-build-a-culture-of-emotional-intelligence-4a8e18ce7ad4", pubDate: "", description: "A framework for embedding emotional intelligence into the DNA of organizations through competency design." }
+  ];
+
+  try {
+    const res  = await fetch(WORKER_URL);
+    const data = await res.json();
+    if (data.status === 'ok' && data.items?.length) {
+      renderArticles(data.items);
+      return;
+    }
+    throw new Error('No items');
+  } catch {
+    renderArticles(fallbackArticles);
+  }
+}
+
+loadArticles();
+</script>
+</body>
+</html>
